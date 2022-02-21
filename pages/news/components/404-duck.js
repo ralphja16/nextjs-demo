@@ -1,8 +1,9 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 function NotFound() {
   return (
     <>
+      {/* https://nextjs.org/docs/api-reference/next/head */}
       <Head>
         <title>404 Duck not found | Rubber Duckies</title>
         <meta name="description" content="Duckify" />
@@ -10,9 +11,7 @@ function NotFound() {
       </Head>
 
       <main className="container mx-auto">
-        <h1 className="text-4xl font-bold text-center my-8 text-red-600">
-          404 Duck not found
-        </h1>
+        <h1 className="text-4xl font-bold text-center my-8 text-red-600">404 Duck not found</h1>
       </main>
     </>
   );
