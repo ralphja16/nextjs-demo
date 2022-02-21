@@ -38,6 +38,11 @@ function Home({ title, ducks }) {
                 <a>Rubber Duck news</a>
               </Link>
             </li>
+            <li>
+              <Link href="/random">
+                <a>more random</a>
+              </Link>
+            </li>
           </ul>
         </nav>
 
