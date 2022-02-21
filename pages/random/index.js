@@ -17,7 +17,7 @@ export default function Swan() {
             <a className="font-bold text-blue-600 underline">Go Duck</a>
           </Link>
         </div>
-        <h1 className="text-6xl text-bold text-blue-900 my-8">Image Optimization</h1>
+        <h1 className="text-6xl text-bold text-blue-900 my-8 font-sans">Image Optimization</h1>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:grid-cols-4 my-8">
           {Array(4)
             .fill(0)
