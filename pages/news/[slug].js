@@ -1,12 +1,13 @@
-import Head from "next/head";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import Head from 'next/head';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 function NewsItem({ duck }) {
   const router = useRouter();
 
   return (
     <>
+      {/* https://nextjs.org/docs/api-reference/next/head */}
       <Head>
         <title>Rubber Duckies</title>
         <meta name="description" content="Rubber duckies" />
@@ -19,9 +20,7 @@ function NewsItem({ duck }) {
           </Link>
         </div>
         <article className="text-center">
-          <h1 className="text-4xl font-bold  my-8 text-red-600">
-            Article: {duck?.title}
-          </h1>
+          <h1 className="text-4xl font-bold  my-8 text-red-600">Article: {duck?.title}</h1>
           <p>
             <strong>You are on the {router.query.slug} page</strong>
           </p>
@@ -40,10 +39,10 @@ export async function getServerSideProps() {
   return {
     props: {
       duck: {
-        title: "Rubber Duckies",
+        title: 'Rubber Duckies',
         content:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium consequuntur ab magnam unde earum minima ullam. Beatae nulla perferendis saepe minima, eaque totam, consectetur aspernatur omnis dolorem quisquam ut iste."
-      }
-    }
+          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium consequuntur ab magnam unde earum minima ullam. Beatae nulla perferendis saepe minima, eaque totam, consectetur aspernatur omnis dolorem quisquam ut iste.',
+      },
+    },
   };
 }
