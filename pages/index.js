@@ -43,6 +43,11 @@ function Home({ title, ducks }) {
                 <a>more random</a>
               </Link>
             </li>
+            <li>
+              <Link href="/users">
+                <a>users</a>
+              </Link>
+            </li>
           </ul>
         </nav>
 
